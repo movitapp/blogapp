@@ -1,0 +1,1 @@
+export {DisplayPosts} from './DisplayPosts'

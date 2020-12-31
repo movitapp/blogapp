@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+// import { useState, useEffect } from 'react'
+// import { Auth, Hub } from 'aws-amplify'
+// import { Authenticator } from 'aws-amplify-react'
+// import {AmplifyAuthenticator, AmplifySignOut} from "@aws-amplify/ui-react";
+import { AuthStateApp } from './Components'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//import {DisplayPosts} from './Pages'
+
+const App = () => (
+  <div className="App">
+    <AuthStateApp/>
+    <h1>My App</h1>
+  </div>
+)
+
 
 export default App;
